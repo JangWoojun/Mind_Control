@@ -1,17 +1,16 @@
-//
-//  ViewController.swift
-//  Mind Control
-//
-//  Created by Jangwoojun on 2023/02/27.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
+    let mainView = MainView()
+    
+    override func loadView() {
+        view = mainView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
 
 

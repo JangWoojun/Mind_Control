@@ -4,87 +4,51 @@ class StartView: UIView {
     
     let mainLabel: UILabel = {
         let tv = UILabel()
-        tv.font = .boldSystemFont(ofSize: 80)
-        tv.textColor = .white
+        tv.font = .boldSystemFont(ofSize: 76)
+        tv.textColor = UIColor(red: 255/255, green: 220/255, blue: 115/255, alpha: 1)
         tv.text = "絶対 催眠"
         
         return tv
     }()
     
-    lazy var imageBackgroundView: UIView = {
-        let view = UIView()
-        view.addSubview(mainImageView)
-        view.backgroundColor = .white
-        view.layer.cornerRadius = 30
-        return view
-    }()
-    
     let mainImageView: UIImageView = {
         let img = UIImageView()
-        img.image = #imageLiteral(resourceName: "eye2")
-        return img
-    }()
-
-    let settingImageView: UIImageView = {
-        let img = UIImageView()
-        img.image = .init(systemName: "gearshape")
-        img.tintColor = .white
+        img.image = #imageLiteral(resourceName: "eye")
         return img
     }()
     
     let playImageView: UIImageView = {
         let img = UIImageView()
         img.image = .init(systemName: "power.circle")
-        img.tintColor = .white
+        img.tintColor = UIColor(red: 255/255, green: 220/255, blue: 115/255, alpha: 1)
         return img
-    }()
-    
-    lazy var stackView: UIStackView = {
-        let st = UIStackView(arrangedSubviews: [playImageView, settingImageView])
-        st.spacing = 10
-        st.axis = .horizontal
-        st.distribution = .equalSpacing
-        st.alignment = .fill
-
-        return st
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .black
-        self.addSubview(imageBackgroundView)
+        self.backgroundColor = UIColor(red: 102/255, green: 0.0/255, blue: 102/255, alpha: 1.0)
+        self.addSubview(mainImageView)
         self.addSubview(mainLabel)
-        self.addSubview(stackView)
+        self.addSubview(playImageView)
         
         mainLabel.translatesAutoresizingMaskIntoConstraints = false
         mainLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        mainLabel.bottomAnchor.constraint(equalTo: self.imageBackgroundView.topAnchor, constant: -70).isActive = true
-        
-        imageBackgroundView.translatesAutoresizingMaskIntoConstraints = false
-        imageBackgroundView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-        imageBackgroundView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        imageBackgroundView.widthAnchor.constraint(equalToConstant: 250).isActive = true
-        imageBackgroundView.heightAnchor.constraint(equalToConstant: 250).isActive = true
+        mainLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 50).isActive = true
         
         mainImageView.translatesAutoresizingMaskIntoConstraints = false
-        mainImageView.widthAnchor.constraint(equalToConstant: 200).isActive = true
-        mainImageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
-        mainImageView.centerYAnchor.constraint(equalTo: imageBackgroundView.centerYAnchor).isActive = true
-        mainImageView.centerXAnchor.constraint(equalTo: imageBackgroundView.centerXAnchor).isActive = true
-        
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 50).isActive = true
-        stackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -50).isActive = true
-        stackView.topAnchor.constraint(equalTo: mainImageView.bottomAnchor, constant: 100).isActive = true
+        mainImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 50).isActive = true
+        mainImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -50).isActive = true
+        mainImageView.heightAnchor.constraint(equalToConstant: 280).isActive = true
+        mainImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        mainImageView.topAnchor.constraint(equalTo: mainLabel.bottomAnchor, constant: 80).isActive = true
 
-        
         playImageView.translatesAutoresizingMaskIntoConstraints = false
+        playImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        playImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -100).isActive = true
         playImageView.heightAnchor.constraint(equalToConstant: 120).isActive = true
         playImageView.widthAnchor.constraint(equalToConstant: 120).isActive = true
         
-        settingImageView.translatesAutoresizingMaskIntoConstraints = false
-        settingImageView.heightAnchor.constraint(equalToConstant: 120).isActive = true
-        settingImageView.widthAnchor.constraint(equalToConstant: 120).isActive = true
+
     }
 
     required init?(coder: NSCoder) {

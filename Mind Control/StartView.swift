@@ -13,7 +13,8 @@ class StartView: UIView {
     
     let mainImageView: UIImageView = {
         let img = UIImageView()
-        img.image = #imageLiteral(resourceName: "eye")
+        img.image = UIImage(systemName: "eye.circle")
+        img.tintColor = UIColor(red: 255/255, green: 207/255, blue: 64/255, alpha: 1)
         return img
     }()
     
@@ -33,7 +34,7 @@ class StartView: UIView {
         
         mainLabel.translatesAutoresizingMaskIntoConstraints = false
         mainLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        mainLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 50).isActive = true
+        mainLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
         
         mainImageView.translatesAutoresizingMaskIntoConstraints = false
         mainImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 50).isActive = true

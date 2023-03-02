@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3000CCAA29B0C0D700BC8CB0 /* sample.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3000CCA929B0C0D700BC8CB0 /* sample.gif */; };
 		3022696D29AC99E8005B1A3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022696C29AC99E8005B1A3F /* AppDelegate.swift */; };
 		3022696F29AC99E8005B1A3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022696E29AC99E8005B1A3F /* SceneDelegate.swift */; };
 		3022697129AC99E8005B1A3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022697029AC99E8005B1A3F /* ViewController.swift */; };
@@ -15,9 +16,12 @@
 		3022698429AC9FEA005B1A3F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022698329AC9FEA005B1A3F /* MainView.swift */; };
 		3024A6A829ADA208003A620D /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3024A6A729ADA208003A620D /* StartView.swift */; };
 		3024A6AA29ADA21F003A620D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3024A6A929ADA21F003A620D /* StartViewController.swift */; };
+		F80C354CCE7B30A3B22F7723 /* Pods_Mind_Control.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D420B3EE1DBAA5E807204764 /* Pods_Mind_Control.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C00CED88467ADCE9ED06A37 /* Pods-Mind Control.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mind Control.release.xcconfig"; path = "Target Support Files/Pods-Mind Control/Pods-Mind Control.release.xcconfig"; sourceTree = "<group>"; };
+		3000CCA929B0C0D700BC8CB0 /* sample.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = sample.gif; path = ../../../Downloads/sample.gif; sourceTree = "<group>"; };
 		3022696929AC99E8005B1A3F /* Mind Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mind Control.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3022696C29AC99E8005B1A3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3022696E29AC99E8005B1A3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +32,8 @@
 		3022698329AC9FEA005B1A3F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3024A6A729ADA208003A620D /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		3024A6A929ADA21F003A620D /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		752899F778BB707A28F35511 /* Pods-Mind Control.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mind Control.debug.xcconfig"; path = "Target Support Files/Pods-Mind Control/Pods-Mind Control.debug.xcconfig"; sourceTree = "<group>"; };
+		D420B3EE1DBAA5E807204764 /* Pods_Mind_Control.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mind_Control.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F80C354CCE7B30A3B22F7723 /* Pods_Mind_Control.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +53,8 @@
 			children = (
 				3022696B29AC99E8005B1A3F /* Mind Control */,
 				3022696A29AC99E8005B1A3F /* Products */,
+				F12D399451B6E55969102EFC /* Pods */,
+				D50CFD3A20E356D7FF4FA010 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +69,7 @@
 		3022696B29AC99E8005B1A3F /* Mind Control */ = {
 			isa = PBXGroup;
 			children = (
+				3000CCA929B0C0D700BC8CB0 /* sample.gif */,
 				3022696C29AC99E8005B1A3F /* AppDelegate.swift */,
 				3022696E29AC99E8005B1A3F /* SceneDelegate.swift */,
 				3022697029AC99E8005B1A3F /* ViewController.swift */,
@@ -73,6 +83,23 @@
 			path = "Mind Control";
 			sourceTree = "<group>";
 		};
+		D50CFD3A20E356D7FF4FA010 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D420B3EE1DBAA5E807204764 /* Pods_Mind_Control.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F12D399451B6E55969102EFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				752899F778BB707A28F35511 /* Pods-Mind Control.debug.xcconfig */,
+				2C00CED88467ADCE9ED06A37 /* Pods-Mind Control.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3022697D29AC99E9005B1A3F /* Build configuration list for PBXNativeTarget "Mind Control" */;
 			buildPhases = (
+				24DC9A4A057DFC52EFEED45F /* [CP] Check Pods Manifest.lock */,
 				3022696529AC99E8005B1A3F /* Sources */,
 				3022696629AC99E8005B1A3F /* Frameworks */,
 				3022696729AC99E8005B1A3F /* Resources */,
+				B8458416F7B318369C552923 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -109,7 +138,7 @@
 				};
 			};
 			buildConfigurationList = 3022696429AC99E8005B1A3F /* Build configuration list for PBXProject "Mind Control" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -132,11 +161,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				3022697929AC99E9005B1A3F /* LaunchScreen.storyboard in Resources */,
+				3000CCAA29B0C0D700BC8CB0 /* sample.gif in Resources */,
 				3022697629AC99E9005B1A3F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24DC9A4A057DFC52EFEED45F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mind Control-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8458416F7B318369C552923 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mind Control/Pods-Mind Control-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mind Control/Pods-Mind Control-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mind Control/Pods-Mind Control-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3022696529AC99E8005B1A3F /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		3022697E29AC99E9005B1A3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 752899F778BB707A28F35511 /* Pods-Mind Control.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +387,7 @@
 		};
 		3022697F29AC99E9005B1A3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C00CED88467ADCE9ED06A37 /* Pods-Mind Control.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

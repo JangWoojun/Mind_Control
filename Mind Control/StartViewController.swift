@@ -11,6 +11,8 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setButton()
+        self.navigationController?.navigationBar.tintColor = .white
+        self.navigationController?.navigationBar.topItem?.title = " "
     }
     
     func setButton() {
@@ -22,7 +24,6 @@ class StartViewController: UIViewController {
     
     @objc func moveMainView() {
         let vc = ViewController()
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: false)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
